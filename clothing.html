@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> E-COMMERCE WEBSITE </title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <header>
+        <section>
+          <div id="container">
+            <div id="shopName">
+              <a href="mainscreen.html"> <b>SHOP</b>LANE </a>
+            </div>
+            <div id="collection">
+              <div id="clothing"><a href="clothing.html">CLOTHING</a></div>
+              <div id="accessories">
+                <a href="accessories.html">ACCESSORIES</a>
+              </div>
+            </div>
+            <div id="search">
+              <i class="fas fa-search search"></i>
+              <input
+                type="text"
+                id="input"
+                name="searchBox"
+                placeholder="Search for Clothing and Accessories"
+              />
+            </div>
+            <div id="user">
+              <a href="cart.html">
+                <i class="fas fa-shopping-cart addedToCart"
+                  ><div id="badge">0</div></i
+                >
+              </a>
+              <a href="index.html" id="signOutBtn">
+                <i class="fas fa-sign-out-alt"></i> Sign Out
+              </a>
+            </div>
+          </div>
+        </section>
+      </header>
+    <!-- SLIDER -->
+    <div id="2"></div>
+    <section>
+        <div id="containerSlider">
+          <div id="slidingImage"><img src="img/img1.png" alt="image1" /></div>
+          <div id="slidingImage"><img src="img/img2.png" alt="image2" /></div>
+          <div id="slidingImage"><img src="img/img3.png" alt="image3" /></div>
+          <div id="slidingImage"><img src="img/img4.png" alt="image4" /></div>
+        </div>
+      </section>
+
+    <!-- CONTENT SECTION -->
+    <div id="3"></div>
+    <div id="mainContainer">
+        <h1>Clothing for Men</h1>
+        <div id="containerClothingMen" class="container">
+            <!-- JS rendered code for men's clothing -->
+        </div>
+
+        <h1>Clothing for Women</h1>
+        <div id="containerClothingWomen" class="container">
+            <!-- JS rendered code for women's clothing -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <footer>
+        <section>    
+            <div id="containerFooter">
+                
+                <div id="webFooter">
+                    <h3><a href="mainscreen.html" class="footer-link">Online Store</a></h3>
+                    <p><a href="clothing.html#containerClothingMen" class="footer-link">Men's Clothing</a></p>
+                    <p><a href="clothing.html#containerClothingWomen" class="footer-link">Women's Clothing</a></p>
+                    <p><a href="accessories.html" class="footer-link">Men's Accessories</a></p>
+                    <p><a href="accessories.html" class="footer-link">Women's Accessories</a></p>
+                </div>                
+                <div id="webFooter">
+                    <h3> Partners </h3>
+                    <p> Khaadi </p>
+                    <p> Gul Ahmed </p>
+                    <p> J. </p>
+                    <p> Sana Safinaz </p>
+                    <p> + Many More </p>
+                </div>
+                <div id="webFooter">
+                    <h3> Address </h3>
+                    <p> Building 101 </p>
+                    <p> Central Avenue </p>
+                    <p> Lahore - 902722 </p>
+                    <p> Pakistan </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+<!-- slider JS START -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<!-- slider JS ENDS -->
+
+<!-- content JS -->
+<script src="js/clothing.js"></script>
+<script src="js/slider.js"></script>
+</html>
